@@ -1,0 +1,22 @@
+Outline for checking input directory for new files since last signature generations.
+
+Dictionary Structure:
+	inputDirectory_PATH: {"time":{int(fileTime)}, "filenames":}
+
+
+
+files = os.listdir(Directory_PATH) 
+filenames = files - unacceptableFormats
+
+for file in filenames:
+	if file not in record[Directory_PATH]["filenames"]:
+		DATA[fullImage_PATH] = generate_signature(fullImage_PATH)
+		changedData = True
+	else:
+		DATA[fullImage_PATH] = old_DATA[fullImage_PATH]
+
+
+if changedData = True:
+	fileTime = time.time()
+	makeNewRecord(DATA, fileTime)
+

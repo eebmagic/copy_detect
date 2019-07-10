@@ -1,0 +1,3 @@
+[submodule "edjoLabsSolution/image-match"]
+	path = edjoLabsSolution/image-match
+	url = https://github.com/EdjoLabs/image-match
